@@ -1018,7 +1018,6 @@ export const partOne = () => {
         totals.push(Math.abs(left[i] - right[i]));
     }
     const sum = totals.reduce((acc, curr) => acc + curr, 0);
-    console.log('SUM', sum);
     return sum;
 };
 export const partTwo = () => {
@@ -1031,6 +1030,10 @@ export const partTwo = () => {
         }
     });
     const sum = scores.reduce((acc, curr) => acc + curr, 0);
-    console.log('SUM', sum);
     return sum;
+};
+export const dayOneResults = () => {
+    console.log('Day 1 Results:');
+    console.log("Part One:", partOne());
+    console.log("Part Two:", partTwo());
 };
